@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="navigation">
+        <a href="index.html" class="navigation-logo">
+          <img src="#" alt="Логотип Глейси">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="catalog.html" class="navigation-link navigation-link-current">
+              Каталог
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              Доставка и оплата
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              О компании
+            </a>
+          </li>
+        </ul>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              +7 800 555-86-28
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              Вход
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              N товара
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-inner">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Сливочное мороженое</h1>
+        <ul class="nav-path">
+          <li class="path-item">
+            <a class="path-link" href="index.html">Главная</a>
+          </li>
+          <li class="path-item">
+            <a class="path-link" href="#">Каталог</a>
+          </li>
+          <li class="path-item">
+            <a class="path-link">Сливочное мороженое</a>
+          </li>
+        </ul>
+      </header>
+    </main>
+      <section class="catalog-products">
+        <h2 class="catalog-page-title">Сливочное мороженое</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get"></form>
+          <label class="filter-item-name" for="sort-select">Сортировка:</label>
+          <select class="filter-item" name="sort" id="sort-select">
+            <option value="popular">по популярности</option>
+          </select>
+          <label class="filter-item-name" for="price-select">Цена: 100 ₽ – 500 ₽</label>
+          <input class="filter-item" type="range" name="price" id="price-select" min="0" max="1000">
+          <!--Как я понял, ползунок с диапазоном мы будем в JS делать? -->
+          <label class="filter-item-name" for="fat-select">Жирность:</label>
+          <label>
+            <input class="filter-item" type="radio" name="fat" id="fat-select" value="0">
+              0%
+          </label>
+          <label>
+            <input class="filter-item" type="radio" name="fat-2" id="fat-select-2" value="10">
+              10%
+          </label>
+          <label>
+            <input class="filter-item" type="radio" name="fat-3" id="fat-select-3" value="11-30">
+            до 30%
+          </label>
+          <label>
+            <input class="filter-item" type="radio" name="fat-4" id="fat-select-4" value="31-100">
+              выше 30%
+          </label>
+          <br>
+          <button class="button" type="submit">Применить</button>
+      </section>
+
+      <section class="tastes">
+
+        <ul class="tastes-list">
+          <li class="tastes-card">
+            <img src="#" alt="Шарик с клубникой">
+            <h4 class="tastes-card-title">
+              Малинка
+            </h4>
+            <p>
+              Сливочное мороженое<br>
+              с малиновым джемом
+            </p>
+            <ul class="price-buy">
+              <li>
+                <b>310 ₽/<span>кг</span></b>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="tastes-card">
+            <img src="#" alt="Шарик с фисташкой">
+            <h4 class="tastes-card-title">
+              Фисташка
+            </h4>
+            <p>
+              Фисташковый пломбир<br>
+              с кусочками шоколада
+            </p>
+            <ul class="price-buy">
+              <li>
+                <b>340 ₽/<span>кг</span></b>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="tastes-card">
+            <img src="#" alt="Шарик с черникой">
+            <h4 class="tastes-card-title">
+              Черника
+            </h4>
+            <p>
+              Крем-брюле<br>
+              с черничным джемом
+            </p>
+            <ul class="price-buy">
+              <li>
+                <b>330 ₽/<span>кг</span></b>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="tastes-card">
+            <img src="#" alt="Шарик с Бабл-гам">
+            <h4 class="tastes-card-title">
+              Бабл-гам
+            </h4>
+            <p>
+              Ванильный пломбир<br>
+              со сладкой посыпкой
+            </p>
+            <ul class="price-buy">
+              <li>
+                <b>320 ₽/<span>кг</span></b>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="tastes-card">
+            <img src="#" alt="Шарик с ежевикой">
+            <h4 class="tastes-card-title">
+              Ежевика
+            </h4>
+            <p>
+              Сливочное мороженое<br>
+              с ежевичным джемом
+            </p>
+            <ul class="price-buy">
+              <li>
+                <b>330 ₽/<span>кг</span></b>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="tastes-card">
+            <img src="#" alt="Шарик с Бананом>">
+            <h4 class="tastes-card-title">
+              Банан
+            </h4>
+            <p>
+              Сливочный пломбир<br>
+              с банановым вкусом
+            </p>
+            <ul class="price-buy">
+              <li>
+                <b>340 ₽/<span>кг</span></b>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="tastes-card">
+            <img src="#" alt="Шарик с шоколадом">
+            <h4 class="tastes-card-title">
+              Шоколадка
+            </h4>
+            <p>
+              Классический<br>
+              шоколадный пломбир
+            </p>
+            <ul class="price-buy">
+              <li>
+                <b>270 ₽/<span>кг</span></b>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="tastes-card">
+            <img src="#" alt="Шарик с Клубничкой">
+            <h4 class="tastes-card-title">
+              Клубничка
+            </h4>
+            <p>
+              Сливочный пломбир<br>
+              с клубничным вкусом
+            </p>
+            <ul class="price-buy">
+              <li>
+                <b>300 ₽/<span>кг</span></b>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="tastes-card">
+            <img src="#" alt="Шарик с лимоном">
+            <h4 class="tastes-card-title">
+              Лимон
+            </h4>
+            <p>
+              Освежающий<br>
+              лимонный сорбет
+            </p>
+            <ul class="price-buy">
+              <li>
+                <b>310 ₽/<span>кг</span></b>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="tastes-card">
+            <img src="#" alt="Шарик с ментолом">
+            <h4 class="tastes-card-title">
+              Ментол
+            </h4>
+            <p>
+              Сливочный пломбир<br>
+              с ментоловым сиропом
+            </p>
+            <ul class="price-buy">
+              <li>
+                <b>320 ₽/<span>кг</span></b>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="tastes-card">
+            <img src="#" alt="Шарик с орехами">
+            <h4 class="tastes-card-title">
+              Орешек
+            </h4>
+            <p>
+              Фисташковый пломбир<br>
+              с шоколадным сиропом
+            </p>
+            <ul class="price-buy">
+              <li>
+                <b>360 ₽/<span>кг</span></b>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="tastes-card">
+            <img src="#" alt="Шарик с крем-брюле">
+            <h4 class="tastes-card-title">
+              Крем-брюле
+            </h4>
+            <p>
+              Классическое<br>
+              крем-брюле
+            </p>
+            <ul class="price-buy">
+              <li>
+                <b>280 ₽/<span>кг</span></b>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button class="button pagination-show-more" type="button">Показать еще</button>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-prev pagination-disabled">
+              <span class="visually-hidden">Предыдущая страница</span>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">5</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-next">
+              <span class="visually-hidden">Следуюшая страница</span>
+            </a>
+          </li>
+
+        </ul>
+      </section>
+    <footer class="page-footer">
+      <section class="social-media">
+        <h2 class="visually-hidden">
+          Социальные сети
+        </h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button-social" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button-social" href="#">
+              <span class="visually-hidden">ВК</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button-social" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="links">
+        <h2 class="visually-hidden">
+          Полезные ссылки
+        </h2>
+        <p>
+          <a class="useful-link" href="#">
+            Для поставщиков
+          </a>
+          <a class="useful-link" href="#">
+            Наши документы
+          </a>
+        </p>
+        <p>
+          <a class="useful-link" href="#">
+            О производстве
+          </a>
+          <a class="useful-link" href="#">
+            Экологические стандарты
+          </a>
+        </p>
+      </section>
+
+      <section class="logos">
+        <h2 class="visually-hidden">
+          Копирайт и лого
+        </h2>
+        <img class="footer-logo" src="#" alt="Логотип Академии">
+        <p>
+          Сделано в <a href="#">.html academy</a> © 2021
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
