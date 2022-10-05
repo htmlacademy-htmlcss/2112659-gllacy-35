@@ -28,34 +28,36 @@
             </a>
           </li>
         </ul>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">
+      </nav>
+
+      <section class="header-buttons">
+            <a href="#" class="phone-link">
               +7 800 555-86-28
             </a>
-          </li>
-          <li class="navigation-item">
             <a href="#" class="navigation-link">
               <span class="visually-hidden">Поиск</span>
             </a>
-          </li>
-          <li class="navigation-item">
             <a href="#" class="navigation-link">
               Вход
             </a>
-          </li>
-          <li class="navigation-item">
             <a href="#" class="navigation-link">
-              N товара
+              Корзина
             </a>
-          </li>
-        </ul>
-      </nav>
+      </section>
     </header>
 
     <main class="main-index">
       <h1 class="visually-hidden">Магазин Глейси шоп</h1>
         <section class="selection">
+
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущий вариант</span>
+          </button>
+          <img class="slider-image-active" src="#" alt="Рожок мороженого">
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующий вариант</span>
+          </button>
+
           <ul class="slider-cards">
           <li class="slider-card-active">
             <h2 class="slider-title">
@@ -67,13 +69,6 @@
             и молока с вкуснейшим клубничным джемом –<br>
             это идеальный десерт для всей семьи.
             </p>
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий вариант</span>
-            </button>
-            <img class="slider-image-active" src="#" alt="Рожок мороженого">
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующий вариант</span>
-            </button>
           </li>
           <li class="slider-card">
             <h2 class="slider-title">
@@ -85,13 +80,6 @@
               вкусом подарит вам свежесть и наслаждение<br>
               даже в самый жаркий летний день.
               </p>
-              <button class="slider-button slider-prev" type="button">
-                <span class="visually-hidden">Предыдущий вариант</span>
-              </button>
-              <img class="slider-image-active" src="#" alt="Рожок мороженого">
-              <button class="slider-button slider-next" type="button">
-                <span class="visually-hidden">Следующий вариант</span>
-              </button>
             </li>
           <li class="slider-card">
             <h2 class="slider-title">
@@ -103,13 +91,6 @@
                 топпингом и кусочками зефира завоюет<br>
                 сердца сладкоежек всех возрастов.
               </p>
-              <button class="slider-button slider-prev" type="button">
-                <span class="visually-hidden">Предыдущий вариант</span>
-              </button>
-              <img class="slider-image-active" src="#" alt="Рожок мороженого">
-              <button class="slider-button slider-next" type="button">
-                <span class="visually-hidden">Следующий вариант</span>
-              </button>
           </li>
           </ul>
           <img class="slider-image" src="#" alt="">
@@ -209,16 +190,12 @@
                 Сливочное мороженое<br>
                 с малиновым джемом
               </p>
-              <ul class="price-buy">
-                <li>
-                  <b>310 ₽/<span>кг</span></b>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="visually-hidden">В корзину</span>
-                  </a>
-                </li>
-              </ul>
+              <p>
+                <b>310 ₽/<span class="small-weight">кг</span></b>
+              </p>
+              <a href="#">
+                <span class="visually-hidden">В корзину</span>
+              </a>
             </li>
             <li class="tastes-card">
               <img src="#" alt="Шарик с фисташкой">
@@ -229,16 +206,12 @@
                 Фисташковый пломбир<br>
                 с кусочками шоколада
               </p>
-              <ul class="price-buy">
-                <li>
-                  <b>340 ₽/<span>кг</span></b>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="visually-hidden">В корзину</span>
-                  </a>
-                </li>
-              </ul>
+              <p>
+                <b>340 ₽/<span>кг</span></b>
+              </p>
+                <a href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
             </li>
             <li class="tastes-card">
               <img src="#" alt="Шарик с черникой">
@@ -249,16 +222,12 @@
                 Крем-брюле<br>
                 с черничным джемом
               </p>
-              <ul class="price-buy">
-                <li>
+              <p>
                   <b>330 ₽/<span>кг</span></b>
-                </li>
-                <li>
+              </p>
                   <a href="#">
                     <span class="visually-hidden">В корзину</span>
                   </a>
-                </li>
-              </ul>
             </li>
             <li class="tastes-card">
               <img src="#" alt="Шарик с Бабл-гам">
@@ -269,16 +238,12 @@
                 Ванильный пломбир<br>
                 со сладкой посыпкой
               </p>
-              <ul class="price-buy">
-                <li>
+              <p>
                   <b>320 ₽/<span>кг</span></b>
-                </li>
-                <li>
-                  <a href="#">
+              </p>
+              <a href="#">
                     <span class="visually-hidden">В корзину</span>
-                  </a>
-                </li>
-              </ul>
+              </a>
             </li>
           </ul>
         </section>
@@ -376,7 +341,7 @@
                   </p>
                   <input type="text" name="address" id="address-box" placeholder="ул. Большая Конюшенная, 19/8">
                   <p>
-                    <input type="button" value="Отправить">
+                    <input class="button" type="submit" value="Отправить">
                   </p>
                 </form>
               </div>
@@ -389,22 +354,13 @@
             <h2 class="visually-hidden">Адрес и контакты</h2>
             <p>
               Адрес главного офиса<br>
-              и офлайн-магазина:
-            </p>
-            <p>
+              и офлайн-магазина: <br>
               наб. реки Карповки,<br>
-              5 лит П, Санкт-Петербург
-            </p>
-            <p>
-              Для заказов по телефону:
-            </p>
-            <p>
+              5 лит П, Санкт-Петербург<br>
+              Для заказов по телефону: <br>
               <a href="#">
                 +7 (812) 812-12-12
               </a>
-            </p>
-            <p>
-              (с 10 до 20 ежедневно)
             </p>
             <a href="#" class="button">Форма обратной связи</a>
           </div>
@@ -439,22 +395,20 @@
         <h2 class="visually-hidden">
           Полезные ссылки
         </h2>
-        <p>
+        <div class="useful-links">
           <a class="useful-link" href="#">
             Для поставщиков
           </a>
           <a class="useful-link" href="#">
             Наши документы
           </a>
-        </p>
-        <p>
           <a class="useful-link" href="#">
             О производстве
           </a>
           <a class="useful-link" href="#">
             Экологические стандарты
           </a>
-        </p>
+        </div>
       </section>
 
       <section class="logos">
