@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
@@ -33,13 +35,13 @@
             <a href="#" class="phone-link">
               +7 800 555-86-28
             </a>
-            <a href="#" class="navigation-link">
+            <a href="#" class="navigation-link-button">
               <span class="visually-hidden">Поиск</span>
             </a>
-            <a href="#" class="navigation-link">
+            <a href="#" class="navigation-link-button">
               Вход
             </a>
-            <a href="#" class="navigation-link">
+            <a href="#" class="navigation-link-button">
               Корзина
             </a>
       </section>
@@ -94,7 +96,7 @@
               <img class="slider-image" src="images/ice-cream-3.png" width="306" height="507" alt="Мороженое с клубникой">
           </li>
           </ul>
-          <a class="button" href="#">
+          <a class="button-white" href="#">
             Заказать
           </a>
           <ol class="slider-pagination">
@@ -146,7 +148,7 @@
           </h2>
           <ul>
             <li class="gift-card">
-              <h3 class="gift-title">
+              <h3 class="gift-card-title">
                 Малинка даром!
               </h3>
               <p>
@@ -155,12 +157,12 @@
                 малинового варенья бесплатно.
               </p>
               <img class="gift-image" src="images/free-malina.png" width="219" height="268" alt="Бесплатная начинка">
-              <a href="#" class="button">
+              <a href="#" class="button-white">
                 Хочу подарок
               </a>
             </li>
             <li class="gift-card">
-              <h3 class="gift-title">
+              <h3 class="gift-card-title">
                 Маршмеллоу даром!
               </h3>
               <p>
@@ -169,7 +171,7 @@
                 зефирок совершенно бесплатно.
               </p>
               <img class="gift-image" src="images/free-marshmellows.png" width="219" height="268" alt="Бесплатная начинка">
-              <a href="#" class="button">
+              <a href="#" class="button-white">
                 Хочу подарок
               </a>
             </li>
@@ -297,7 +299,6 @@
               фруктовых щербетов<br>
               к столу
             </h3>
-            <img src="#" alt="Шарики с мороженым">
           </div>
           <div class="subscription-card">
             <h2 class="visually-hidden">Форма подписки</h2>
@@ -308,7 +309,7 @@
             </p>
             <form action="#" method="post">
               <input type="email" name="email-box" placeholder="email@example.com">
-              <input type="button" value="Отправить">
+              <input class ="button-red" type="button" value="Отправить">
             </form>
           </div>
         </section>
@@ -342,7 +343,7 @@
                   </p>
                   <input type="text" name="address" id="address-box" placeholder="ул. Большая Конюшенная, 19/8">
                   <p>
-                    <input class="button" type="submit" value="Отправить">
+                    <input class="button-red" type="submit" value="Отправить">
                   </p>
                 </form>
               </div>
@@ -355,17 +356,23 @@
             <h2 class="visually-hidden">Адрес и контакты</h2>
             <p>
               Адрес главного офиса<br>
-              и офлайн-магазина: <br>
-              наб. реки Карповки,<br>
-              5 лит П, Санкт-Петербург<br>
-              Для заказов по телефону: <br>
-              <a href="#">
-                +7 (812) 812-12-12
-              </a>
+              и офлайн-магазина:
             </p>
-            <a href="#" class="button">Форма обратной связи</a>
+            <p class="address-text">
+              наб. реки Карповки,<br>
+              5 лит П, Санкт-Петербург
+            </p>
+            <p>
+              Для заказов по телефону:
+            </p>
+            <a class="phone-link-address" href="#">
+              +7 (812) 812-12-12
+            </a>
+            <p>
+              (с 10 до 20 ежедневно)
+            </p>
+            <a href="#" class="button-red">Форма обратной связи</a>
           </div>
-          <img src="#" alt="Три рожка с мороженым">
         </section>
     </main>
     <footer class="page-footer">
