@@ -191,6 +191,7 @@ body {
 
 .blog-card {
   background-image: url(../images/blog-bg.png);
+  background-repeat: no-repeat;
 }
 
 .blog-card p {
@@ -207,6 +208,7 @@ body {
 
 .subscription-card {
   background-image: url(../images/mail-bg.png);
+  background-repeat: no-repeat;
 }
 
 .subscription-card p {
@@ -215,6 +217,7 @@ body {
 
 .delivery {
   background-image: url(../images/delivery-bg.png);
+  background-repeat: no-repeat;
 }
 
 .delivery-card h2 {
@@ -245,6 +248,7 @@ body {
 
 .contacts {
   background-image: url(../images/contacts-bg.jpeg);
+  background-repeat: no-repeat;
 }
 
 .contacts-card {
