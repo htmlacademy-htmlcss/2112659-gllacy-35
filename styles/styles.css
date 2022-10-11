@@ -33,9 +33,6 @@ body {
   background-color: #FEAFC3;
 }
 
-.main-header {
-}
-
 .navigation-link {
   line-height: 20px;
   font-size: 16px;
@@ -306,10 +303,6 @@ p.address-text {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
-}
-
-.filter-item {
-  background-color: red;
 }
 
 .pagination-link {
