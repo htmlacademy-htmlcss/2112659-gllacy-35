@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="../2112659-gllacy-35/styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -66,29 +66,47 @@
         <h2 class="catalog-page-title">Сливочное мороженое</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <label class="filter-item-name" for="sort-select">Сортировка:</label>
-          <select class="filter-item" name="sort" id="sort-select">
-            <option value="popular">по популярности</option>
-          </select>
+          <div class="filter-block">
+            <select class="filter-item" name="sort" id="sort-select">
+              <option value="popular">по популярности</option>
+            </select>
+          </div>
           <label class="filter-item-name" for="price-select">Цена: 100 ₽ – 500 ₽</label>
-          <input class="filter-item" type="range" name="price" id="price-select" min="0" max="1000">
+          <div class="filter-block">
+            <input class="filter-item" type="range" name="price" id="price-select" min="0" max="1000">
+          </div>
           <label class="filter-item-name" for="fat-select">Жирность:</label>
-          <label>
-            <input class="filter-item" type="radio" name="fat" id="fat-select" value="0">
-              0%
-          </label>
-          <label>
-          <input class="filter-item" type="radio" name="fat-2" id="fat-select-2" value="10">
-              10%
-          </label>
-          <label>
-            <input class="filter-item" type="radio" name="fat-3" id="fat-select-3" value="11-30">
-            до 30%
-          </label>
-          <label>
+          <div class="filter-block">
+            <label>
+              <input class="filter-item" type="radio" name="fat" id="fat-select" value="0">
+                0%
+            </label>
+            <label>
+            <input class="filter-item" type="radio" name="fat-2" id="fat-select-2" value="10">
+                10%
+            </label>
+            <label>
+              <input class="filter-item" type="radio" name="fat-3" id="fat-select-3" value="11-30">
+              до 30%
+            </label>
+            <label>
             <input class="filter-item" type="radio" name="fat-4" id="fat-select-4" value="31-100">
-              выше 30%
-          </label>
-          <br>
+                выше 30%
+            </label>
+          </div>
+          <label class="filter-item-name" for="fat-select">Наполнители:</label>
+          <div class="filter-block">
+              <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="шоколадные">
+              <label for="filling-select">шоколадные</label>
+              <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="сахарные посыпки">
+              <label for="filling-select">сахарные посыпки</label>
+              <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="фрукты">
+              <label for="filling-select">фрукты</label>
+              <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="сиропы">
+              <label for="filling-select">сиропы</label>
+              <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="джемы">
+              <label for="filling-select">джемы</label>
+          </div>
           <button class="button" type="submit">Применить</button>
         </form>
       </section>
