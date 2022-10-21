@@ -8,54 +8,62 @@
 </head>
   <body>
     <header class="main-header">
-      <nav class="page-navigation">
-        <a href="index.html" class="navigation-link">
-          <img src="images/logo.svg" width="137" height="55.72" alt="Логотип Глейси">
-        </a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a href="catalog.html" class="navigation-link-current">
-              Каталог
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">
-              Доставка и оплата
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">
-              О компании
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <nav class="main-navigation">
+          <a href="#" class="navigation-link">
+            <img class="navigation-logo" src="images/logo.svg" width="137" height="55.72" alt="Логотип Глейси">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="catalog.html" class="navigation-link">
+                Каталог
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                Доставка и оплата
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                О компании
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-      <section class="header-buttons">
-            <a href="#" class="phone-link">
-              +7 800 555-86-28
-            </a>
-            <a href="#" class="navigation-link-button">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-            <a href="#" class="navigation-link-button">
-              Вход
-            </a>
-            <a href="#" class="navigation-link-button">
-              Корзина
-            </a>
-      </section>
+        <section class="buttons-container header-buttons">
+              <a href="#" class="phone-link">
+                +7 800 555-86-28
+              </a>
+              <a href="#" class="navigation-link-button">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+              <a href="#" class="navigation-link-button">
+                Вход
+              </a>
+              <a href="#" class="navigation-link-button">
+                Корзина
+              </a>
+        </section>
+      </div>
     </header>
 
-    <main class="main-inner">
+    <main class="page-container main-inner">
       <header class="inner-header">
         <h1 class="visually-hidden">Каталог.Сливочное мороженое</h1>
-        <ul class="nav-path">
+        <ul class="nav-container nav-path">
           <li class="path-item">
             <a class="path-link" href="index.html">Главная</a>
           </li>
           <li class="path-item">
+            *
+          </li>
+          <li class="path-item">
             <a class="path-link" href="#">Каталог</a>
+          </li>
+          <li class="path-item">
+            *
           </li>
           <li class="path-item">
             <a class="path-link-current">Сливочное мороженое</a>
@@ -66,55 +74,87 @@
       <section class="catalog-products">
         <h2 class="catalog-page-title">Сливочное мороженое</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <label class="filter-item-name" for="sort-select">Сортировка:</label>
-          <div class="filter-block">
-            <select class="filter-item" name="sort" id="sort-select">
-              <option value="popular">по популярности</option>
-            </select>
+           <div class="filters-container">
+            <ul class="filters-list">
+              <li class="filter-1">
+                <label class="filter-item-name" for="sort-select">Сортировка:</label><br>
+                <select class="filter-item" name="sort" id="sort-select">
+                    <option value="popular">по популярности</option>
+                </select>
+              </li>
+              <li class="filter-2">
+                <div class="range-containter">
+                  Цена: 100 ₽ – 500 ₽
+                  <div class="range-button">
+                    button
+                  </div>
+                </div>
+              </li>
+              <li class="filter-3">
+                <ul class="radio-list">
+                  <li>
+                    <label style="display: block">Жирность:</label>
+                    <label>
+                      <input class="filter-item" type="radio" name="fat" id="fat-select" value="0">
+                        0%
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="filter-item" type="radio" name="fat-2" id="fat-select-2" value="10">
+                        10%
+                      </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="filter-item" type="radio" name="fat-3" id="fat-select-3" value="11-30">
+                        до 30%
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="filter-item" type="radio" name="fat-4" id="fat-select-4" value="31-100">
+                        выше 30%
+                     </label>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter-4">
+                <ul class="checkbox-list">
+                  <li>
+                    <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="шоколадные">
+                    <label for="filling-select">шоколадные</label>
+                  </li>
+                  <li>
+                    <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="сахарные посыпки">
+                    <label for="filling-select">сахарные посыпки</label>
+                  </li>
+                  <li>
+                    <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="фрукты">
+                    <label for="filling-select">фрукты</label>
+                  </li>
+                  <li>
+                    <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="сиропы">
+                    <label for="filling-select">сиропы</label>
+                  </li>
+                  <li>
+                    <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="джемы">
+                    <label for="filling-select">джемы</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button class="button" type="submit">Применить</button>
+              </li>
+            </ul>
+
           </div>
-          <label class="filter-item-name" for="price-select">Цена: 100 ₽ – 500 ₽</label>
-          <div class="filter-block">
-            <input class="filter-item" type="range" name="price" id="price-select" min="0" max="1000">
-          </div>
-          <label class="filter-item-name" for="fat-select">Жирность:</label>
-          <div class="filter-block">
-            <label>
-              <input class="filter-item" type="radio" name="fat" id="fat-select" value="0">
-                0%
-            </label>
-            <label>
-            <input class="filter-item" type="radio" name="fat-2" id="fat-select-2" value="10">
-                10%
-            </label>
-            <label>
-              <input class="filter-item" type="radio" name="fat-3" id="fat-select-3" value="11-30">
-              до 30%
-            </label>
-            <label>
-            <input class="filter-item" type="radio" name="fat-4" id="fat-select-4" value="31-100">
-                выше 30%
-            </label>
-          </div>
-          <label class="filter-item-name" for="fat-select">Наполнители:</label>
-          <div class="filter-block">
-              <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="шоколадные">
-              <label for="filling-select">шоколадные</label>
-              <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="сахарные посыпки">
-              <label for="filling-select">сахарные посыпки</label>
-              <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="фрукты">
-              <label for="filling-select">фрукты</label>
-              <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="сиропы">
-              <label for="filling-select">сиропы</label>
-              <input class="filter-item" type="checkbox" name="filling" id="filling-select" value="джемы">
-              <label for="filling-select">джемы</label>
-          </div>
-          <button class="button" type="submit">Применить</button>
         </form>
       </section>
 
       <section class="tastes">
 
-        <ul class="tastes-list">
+        <ul class="tastes-container tastes-list">
           <li class="tastes-card">
             <img class="tastes-image" src="images/berry.jpg" width="168" height="168" alt="Шарик с малиной">
             <h4 class="tastes-card-title">
@@ -310,39 +350,41 @@
             </a>
           </li>
         </ul>
-        <button class="button pagination-show-more button-white" type="button">Показать еще</button>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next">
-              <span class="visually-hidden">Следуюшая страница</span>
-            </a>
-          </li>
 
-        </ul>
+        <div class="cards-end">
+          <button class="button pagination-show-more button-white" type="button">Показать еще</button>
+          <ul class="pagination-container pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev pagination-disabled">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">5</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next">
+                <span class="visually-hidden">Следуюшая страница</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <section class="social-media">
+    <footer class="footer-container page-footer">
+      <section class="social-container social-media">
         <h2 class="visually-hidden">
           Социальные сети
         </h2>
@@ -365,7 +407,7 @@
         </ul>
       </section>
 
-      <section class="links">
+      <section class="links-container links">
         <h2 class="visually-hidden">
           Полезные ссылки
         </h2>
@@ -375,17 +417,16 @@
           </a>
           <a class="useful-link" href="#">
             Наши документы
-          </a>
+          </a><br>
           <a class="useful-link" href="#">
             О производстве
           </a>
           <a class="useful-link" href="#">
             Экологические стандарты
           </a>
-        </div>
       </section>
 
-      <section class="logos">
+      <section class="logos-container logos">
         <h2 class="visually-hidden">
           Копирайт и лого
         </h2>
@@ -394,6 +435,7 @@
           Сделано в <a href="#">.html academy</a> © 2021
         </p>
       </section>
-    </footer>
+    </div>
+  </footer>
   </body>
 </html>

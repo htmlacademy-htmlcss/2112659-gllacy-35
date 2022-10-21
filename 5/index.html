@@ -108,46 +108,51 @@
               <a class="button-white" href="#">
                 Заказать
               </a>
-              <ol class="slider-pagination">
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                    <span class="visually-hidden">1 вариант</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">2 вариант</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">3 вариант</span>
-                  </button>
-                </li>
-              </ol>
             </section>
 
             <section class="social-media">
-              <h2 class="visually-hidden">
-                Социальные сети
-              </h2>
-              <ul class="footer-social-list">
-                <li class="footer-social-item">
-                  <a class="button-social" href="#">
-                    <span class="visually-hidden">Телеграм</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a class="button-social" href="#">
-                    <span class="visually-hidden">ВК</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a class="button-social" href="#">
-                    <span class="visually-hidden">Инстаграм</span>
-                  </a>
-                </li>
-              </ul>
+              <div class="pages-links">
+                <ol class="slider-pagination">
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                      <span class="visually-hidden">1 вариант</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">2 вариант</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">3 вариант</span>
+                    </button>
+                  </li>
+                </ol>
+
+
+
+                <h2 class="visually-hidden">
+                  Социальные сети
+                </h2>
+                <ul class="footer-social-list">
+                  <li class="footer-social-item">
+                    <a class="button-social" href="#">
+                      <span class="visually-hidden">Телеграм</span>
+                    </a>
+                  </li>
+                  <li class="footer-social-item">
+                    <a class="button-social" href="#">
+                      <span class="visually-hidden">ВК</span>
+                    </a>
+                  </li>
+                  <li class="footer-social-item">
+                    <a class="button-social" href="#">
+                      <span class="visually-hidden">Инстаграм</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </section>
 
             <section class="gifts">
@@ -287,7 +292,6 @@
                   мороженого собственного производства на развес
                 </h2>
                 <ul class="about-items about-list">
-                  <div class="item-row">
                     <li class="about-list-item">
                       <p>
                         Всё наше мороженое изготавливается<br>
@@ -302,8 +306,6 @@
                         нас связывает долговременное сотрудничество.
                       </p>
                     </li>
-                  </div>
-                  <div class="item-row">
                     <li class="about-list-item">
                       <p>
                         Для приготовления мороженого используются сливки<br>
@@ -318,7 +320,6 @@
                         растаять и позволяет сохранить превосходный вкус.
                       </p>
                     </li>
-                  </div>
                 </ul>
               </div>
             </section>
@@ -335,7 +336,7 @@
                   к столу
                 </h3>
               </div>
-              <div class="subscription-card">
+              <div class="subscription-container">
                 <div class="subscription-text">
                   <h2 class="visually-hidden">Форма подписки</h2>
                   <p>
@@ -352,39 +353,41 @@
             </section>
 
             <section class="delivery">
-              <div class="delivery-card">
-                <h2>
+              <div class="delivery-container">
+                <div class="delivery-card">
+                <h2 class="delivery-card-title">
                   Доставка любимого<br>
                   мороженого на дом
                 </h2>
-                <p>
-                  Хочется полакомиться любимым десертом,<br>
-                  но нет времени съездить в магазин? Закажите<br>
-                  доставку мороженого на дом, и курьер<br>
-                  привезёт вам ваш заказ в течение часа!
-                </p>
+                  <p>
+                    Хочется полакомиться любимым десертом,<br>
+                    но нет времени съездить в магазин? Закажите<br>
+                    доставку мороженого на дом, и курьер<br>
+                    привезёт вам ваш заказ в течение часа!
+                  </p>
+                </div>
                   <div class="order-container order-card">
-                    <p>
-                      Укажите адрес и дату доставки, и мы свяжемся<br>
-                      с вами, чтобы подтвердить заказ.
-                    </p>
-                    <form action="#" method="post">
                       <p>
-                        <label for="delivery-date-box">Дата</label>
-                        <label for="phone-number-box">Телефон</label>
+                        Укажите адрес и дату доставки, и мы свяжемся<br>
+                        с вами, чтобы подтвердить заказ.
                       </p>
-                      <input type="date" name="delivery-date" id="delivery-date-box">
-                      <input type="number" name="phone-number" id="phone-number-box" placeholder="+7 800 999-00-00">
-                      <p>
-                        <label for="address-box">Адрес</label>
-                      </p>
-                      <input type="text" name="address" id="address-box" placeholder="ул. Большая Конюшенная, 19/8">
-                      <p>
-                        <input class="button-red" type="submit" value="Отправить">
-                      </p>
-                    </form>
-                  </div>
-              </div>
+                      <form action="#" method="post">
+                        <p>
+                          <label for="delivery-date-box">Дата</label>
+                          <label for="phone-number-box">Телефон</label>
+                        </p>
+                        <input type="date" name="delivery-date" id="delivery-date-box">
+                        <input type="number" name="phone-number" id="phone-number-box" placeholder="+7 800 999-00-00">
+                        <p>
+                          <label for="address-box">Адрес</label>
+                        </p>
+                        <input type="text" name="address" id="address-box" placeholder="ул. Большая Конюшенная, 19/8">
+                        <p>
+                          <input class="button-red" type="submit" value="Отправить">
+                        </p>
+                      </form>
+                    </div>
+                 </div>
 
             </section>
 
