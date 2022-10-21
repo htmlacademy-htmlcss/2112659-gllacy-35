@@ -42,11 +42,13 @@ body {
   line-height: 22px;
   color: #2D3440;
   background-color: #FEAFC3;
-
-
 }
 
 .main-container {
+  flex-grow: 1;
+}
+
+.main-inner {
   flex-grow: 1;
 }
 
@@ -202,6 +204,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 1170px;
+  margin-top: 55px;
   padding: 0;
   gap: 30px;
 }
@@ -215,6 +218,7 @@ body {
   align-items: flex-start;
   isolation: isolate;
   height: 268px;
+  border-radius: 8px;
 }
 
 .gift-card-text {
@@ -244,7 +248,12 @@ body {
   z-index: 1;
 }
 
+.popular-tastes {
+  margin-top: 80px;
+}
+
 .popular-tastes h2 {
+  margin: 0;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -253,8 +262,11 @@ body {
 
 .tastes-container {
   display: flex;
+  flex-wrap: wrap;
   width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
+  margin-top: 56px;
   padding: 0;
   justify-content: space-between;
   align-items: flex-start;
@@ -265,11 +277,11 @@ body {
 .tastes-card {
   background-color: #FCFCFC;
   width: 270px;
-  height: 332px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 16px;
 }
 
 .tastes-card-title {
@@ -277,6 +289,8 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
+  margin-top: 16px;
+  margin-bottom: 0;
 }
 
 .price-buy {
@@ -284,13 +298,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
-  gap: 73px;
+  padding-bottom: 24px;
+  margin-top: 16px;
 }
 
 .tastes-card p {
   text-align: center;
   color: #565C66;
+  margin-top: 8px;
 }
 
 .tastes-card b {
@@ -301,17 +316,18 @@ body {
 }
 
 .about {
+  width: 1170px;
+  height: 480px;
   background-image: url(../images/waffle-bg.png);
   background-repeat: no-repeat;
+  background-size: contain;
 
-  width: 1170px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin: 0 auto;
   margin-top: 80px;
-  padding: 24px;
-  gap: 10px;
 }
 
 .about-container {
@@ -319,11 +335,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 56px 40px;
-  gap: 56px;
+  margin: 24px;
   width: 1122px;
   height: 432px;
   background-color: #ffffff;
+  border-radius: 16px;
 }
 
 .about h2 {
@@ -331,22 +347,15 @@ body {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
-}
-
-.item-row {
-  width: 1043px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0;
-  gap: 32px;
-
+  margin: 0;
 }
 
 .about-items {
+  width: 1042px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .about-list-item p {
@@ -359,51 +368,95 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 1170px;
+  max-height: 224px;;
+
   margin: 0 auto;
   padding: 0;
-  gap: 30px;
+
 }
 
 .blog-card {
   background-image: url(../images/blog-bg.png);
   background-repeat: no-repeat;
-  width: 570px;
+  max-width: 570px;
+  padding: 33px 235px 68px 32px;
+  margin: 0;
+  align-self: stretch;
+  border-radius: 16px;
 }
 
 .blog-card p {
   line-height: 20px;
   color: #565C66;
+  margin: 0;
 }
 
 .blog-card h3 {
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 68px;
+  padding: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   text-align: left;
 }
 
-.subscription-card {
+.subscription-container {
   background-image: url(../images/mail-bg.png);
+  display: flex;
   background-repeat: no-repeat;
+  justify-content: center;
+  align-self: stretch;
+  max-width: 570px;
+  padding: 6px;
+  border-radius: 16px;
 }
 
-.subscription-card p {
-  color: #565C66;
+.subscription-text {
+  background-color: #FFFFFF;
+  padding: 26px;
+  border-radius: 16px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 42px;
 }
+
+.subscription-text p {
+  color: #565C66;
+  margin: 0;
+}
+
+
 
 .delivery {
   background-image: url(../images/delivery-bg.png);
   background-repeat: no-repeat;
-
+  background-size: cover;
   width: 1170px;
   margin: 0 auto;
+  margin-top: 80px;
+  border-radius: 16px;
 }
 
-.delivery-card h2 {
+.delivery-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  gap: 175px;
+}
+
+
+.delivery-card-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   color: #2D3440;
+  margin-top: 167px;
 }
 
 .delivery-card p {
@@ -416,6 +469,7 @@ body {
 
 .order-card {
   background-color: #FCFCFC;
+  justify-self: center;
 }
 
 .order-card p {
@@ -432,14 +486,18 @@ body {
 .contacts {
   background-image: url(../images/contacts-bg.jpeg);
   background-repeat: no-repeat;
-
-  width: 1170px;
+  background-size: cover;
+  margin-top: 80px;
+  padding: 64px;
+  padding-right: 763px;
+  border-radius: 16px;
 }
 
 .contacts-card {
   background-color: #FCFCFC;
-
   width: 343px;
+  padding: 40px;
+  border-radius: 16px;
 }
 
 .contacts-card p {
@@ -520,7 +578,8 @@ p.address-text {
 .footer-social-list {
   display: flex;
   flex-direction: row;
-  margin: 48px 300px 81px 4px;
+  margin: 0;
+  align-self: baseline;
 }
 
 .links-container {
@@ -532,4 +591,97 @@ p.address-text {
 
 .visually-hidden {
   display: none;
+}
+
+.nav-container {
+  display: flex;
+  list-style-type: none;
+  width: 335px;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+}
+
+.filters-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 823px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-bottom: 40px;
+  gap: 24px;
+
+}
+
+.filter-1 {
+  width: 196px;
+}
+
+.filter-2 {
+  width: 196px;
+}
+
+.filter-3 {
+  width: 383px;
+}
+
+.filter-4 {
+  width: 604px;
+}
+
+.radio-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.checkbox-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.cards-end {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 41px 98px;
+  gap: 335px;
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 168px;
+  padding: 0;
+  gap: 8px;
+}
+
+.pages-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slider-pagination {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44px;
+
 }
