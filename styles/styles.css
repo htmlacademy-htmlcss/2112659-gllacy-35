@@ -58,16 +58,16 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
 }
 
 .main-navigation {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 auto;
   gap: 16px;
   width: 575px;
+  padding: 24px 0;
 }
 
 .navigation-list {
@@ -75,11 +75,14 @@ body {
   width: 422px;
   flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding: 0;
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .navigation-link {
+
   line-height: 20px;
   font-size: 16px;
   text-align: center;
@@ -125,6 +128,9 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
   color: #2D3440;
   text-decoration: none;
+  border-radius: 30px;
+
+  padding: 6px 16px;
 }
 
 .page-container {
@@ -152,6 +158,11 @@ body {
   text-decoration: underline;
 }
 
+.slider-cards {
+  margin: 0;
+  padding: 0;
+}
+
 .slider-card {
   display: flex;
   align-items: center;
@@ -175,14 +186,41 @@ body {
   height: 188px;
 }
 
-.button-white {
+.selection .button-white {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  padding: 0;
   text-align: center;
   color: #2D3440;
   background-color: #FCFCFC;
   text-decoration: none;
+  border-radius: 26px;
+
+
+  max-width: 140px;
+  padding: 12px 32px;
+}
+
+.button-filter {
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  min-height: 36px;
+  width: 190px;
+}
+
+
+.button-white {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
+  text-align: center;
+  color: #2D3440;
+  background-color: #FCFCFC;
+  text-decoration: none;
+  border-radius: 26px;
 }
 
 .button-red {
@@ -204,6 +242,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 1170px;
+  margin: 0;
   margin-top: 55px;
   padding: 0;
   gap: 30px;
@@ -221,9 +260,11 @@ body {
   border-radius: 8px;
 }
 
+
 .gift-card-text {
   display: flex;
   flex-direction: column;
+  margin: 36px 0 36px 0;
   gap: 28px;
   width: 351px;
 }
@@ -234,18 +275,30 @@ body {
   line-height: 46px;
   text-align: center;
   margin: 0;
+  margin-top: 80px;
+  padding-left: 36px;
 }
 
 .gift-card-title {
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  padding-left: 36px;
+
 }
 
 .gift-card p {
   text-align: left;
   margin: 0;
-  z-index: 1;
+  padding-left: 36px;
+}
+
+.want-gift-button {
+  width: 112px;
+  border-radius: 26px;
+  margin-left: 36px;
+  padding: 12px 32px;
 }
 
 .popular-tastes {
@@ -317,10 +370,10 @@ body {
 
 .about {
   width: 1170px;
-  height: 480px;
   background-image: url(../images/waffle-bg.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  border-radius: 16px;
 
 
   display: flex;
@@ -333,11 +386,11 @@ body {
 .about-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 24px;
-  width: 1122px;
-  height: 432px;
+  padding: 56px 40px;
+  max-width: 1122px;
   background-color: #ffffff;
   border-radius: 16px;
 }
@@ -352,14 +405,26 @@ body {
 
 .about-items {
   width: 1042px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 26px;
+    grid-row-gap: 40px;
+  margin: 0;
+  padding: 0;
+  margin-top: 56px;
+  list-style-type: none;
+}
+
+.about-list-item {
+  max-width: 505px;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 6px;
 }
 
 .about-list-item p {
   color: #565C66;
+  margin: 0;
 }
 
 .cards-container {
@@ -371,6 +436,7 @@ body {
   max-height: 224px;;
 
   margin: 0 auto;
+  margin-top: 80px;
   padding: 0;
 
 }
@@ -434,7 +500,6 @@ body {
 .delivery {
   background-image: url(../images/delivery-bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
   width: 1170px;
   margin: 0 auto;
   margin-top: 80px;
@@ -442,12 +507,16 @@ body {
 }
 
 .delivery-container {
+  width: 1170px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-left: 100px;
-  gap: 175px;
+  gap: 135px;
+}
+
+.delivery-card {
+  padding: 167px 0 163px 100px;
 }
 
 
@@ -456,20 +525,28 @@ body {
   font-size: 32px;
   line-height: 46px;
   color: #2D3440;
-  margin-top: 167px;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+
 }
 
 .delivery-card p {
   color: #565C66;
+  margin: 0;
 }
 
 .order-container {
-  width: 500px;
+  max-width: 500px;
+  padding: 40px;
+  margin-right: 64px;
+  justify-self: center;
 }
 
 .order-card {
   background-color: #FCFCFC;
-  justify-self: center;
+  border-radius: 8px;
+
 }
 
 .order-card p {
@@ -553,10 +630,72 @@ p.address-text {
 }
 
 .catalog-filter {
+  display: flex;
+  flex-direction: column;
+  max-width: 830px;
+  gap: 16px;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
 }
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.row-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.filter-1 {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 8px;
+}
+
+.filter-2 {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 8px;
+
+}
+
+.filter-3 {
+  width: 385px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.filter-4 {
+  width: 605px;
+  gap: 8px;
+}
+
+.radio-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.checkbox-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin: 10px 24px;
+  padding: 0;
+  list-style-type: none;
+}
+
 
 .pagination-link {
   line-height: 20px;
@@ -590,7 +729,14 @@ p.address-text {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .nav-container {
@@ -602,61 +748,21 @@ p.address-text {
   gap: 8px;
 }
 
-.filters-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  max-width: 823px;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin-bottom: 40px;
-  gap: 24px;
-
-}
-
-.filter-1 {
-  width: 196px;
-}
-
-.filter-2 {
-  width: 196px;
-}
-
-.filter-3 {
-  width: 383px;
-}
-
-.filter-4 {
-  width: 604px;
-}
-
-.radio-list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-}
-
-.checkbox-list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-}
 
 .cards-end {
   display: flex;
   flex-direction: row;
-  flex-grow: 1;
   justify-content: flex-end;
   align-items: center;
-  padding: 41px 98px;
-  gap: 335px;
+  padding-top: 41px;
+  margin: 0 auto;
+
 }
 
 .pagination-container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   list-style-type: none;
   width: 168px;
   padding: 0;
@@ -683,5 +789,13 @@ p.address-text {
   justify-content: space-between;
   align-items: center;
   padding: 44px;
+}
 
+.pagination-show-more {
+  width: 180px;
+  margin-right: 335px
+}
+
+.card-content {
+  width: 190px;
 }
