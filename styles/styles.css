@@ -68,6 +68,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
   width: 575px;
   padding: 24px 0;
@@ -111,6 +112,7 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
   padding: 0;
   gap: 16px;
   width: 431px;
@@ -204,6 +206,7 @@ body {
 .slider-text-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 24px;
   margin-right: 41px;
 }
@@ -282,6 +285,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   width: 1170px;
   margin: 0;
   margin-top: 55px;
@@ -305,6 +309,7 @@ body {
 .gift-card-text {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 36px 0 36px 0;
   gap: 28px;
   width: 351px;
@@ -404,6 +409,7 @@ body {
 .tastes-card p {
   text-align: center;
   color: #565C66;
+  margin: 0;
   margin-top: 8px;
 }
 
@@ -426,7 +432,6 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 80px;
 }
 
 .about-container {
@@ -887,4 +892,7 @@ p.address-text {
 
 .card-content {
   width: 190px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
