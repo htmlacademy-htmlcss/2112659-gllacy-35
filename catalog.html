@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="header-container">
+      <div class="header-container catalog-header-container">
         <nav class="main-nav-container main-navigation">
           <a href="#" class="navigation-link">
             <img class="navigation-logo" src="images/logo.svg" width="137" height="55.72" alt="Логотип Глейси">
@@ -74,14 +74,14 @@
         <h2 class="catalog-page-title">Сливочное мороженое</h2>
         <div class="filters-container">
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="row-1">
-            <div class="filter-1">
+          <div class="filter-row-upper">
+            <div class="filter-sort">
                 <label class="filter-item-name" for="sort-select">Сортировка:</label>
                 <select class="filter-item" name="sort" id="sort-select">
                   <option value="popular">по популярности</option>
                 </select>
               </div>
-              <div class="filter-2">
+              <div class="filter-price">
                 <span class="label-filter">
                   Цена: 100 ₽ – 500 ₽
                 </span>
@@ -89,8 +89,8 @@
                     button
                 </div>
               </div>
-              <div class="filter-3">
-                <span class="label">
+              <div class="filter-fat">
+                <span class="label-filter">
                   Жирность:
                 </span>
                 <ul class="radio-list">
@@ -121,8 +121,8 @@
                 </ul>
               </div>
             </div>
-            <div class="row-2">
-              <div class="filter-4">
+            <div class="filter-row-lower">
+              <div class="filter-filling">
                 <span class="label-filter">
                   Наполнители:
                 </span>
