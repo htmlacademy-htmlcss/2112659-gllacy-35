@@ -33,7 +33,7 @@
         </nav>
 
         <section class="buttons-container header-buttons">
-              <a href="#" class="phone-link">
+          <a href="#" class="phone-link">
                 +7 800 555-86-28
               </a>
               <a href="#" class="navigation-link-button">
@@ -49,13 +49,11 @@
         </section>
       </div>
     </header>
+
       <main class="main-container main-index">
         <div class="page-container">
           <h1 class="visually-hidden">Магазин Глейси шоп</h1>
             <section class="selection-container selection">
-
-
-
 
               <ul class="slider-cards">
               <li class="slider-card slider-card-active">
@@ -69,7 +67,7 @@
                   и молока с вкуснейшим клубничным джемом – <br>
                   это идеальный десерт для всей семьи.
                   </p>
-                  <a class="button-white" href="#">
+                  <a class="button-white slider-order-button" href="#">
                     Заказать
                   </a>
                 </div>
@@ -113,9 +111,10 @@
             </section>
 
             <section class="social-media">
+
               <div class="pages-links">
                 <ol class="slider-pagination">
-                  <li class="slider-pagination-item">
+                  <li class="slider-item">
                     <button class="slider-pagination-button slider-pagination-button-current" type="button">
                       <span class="visually-hidden">1 вариант</span>
                     </button>
@@ -137,23 +136,23 @@
                 <h2 class="visually-hidden">
                   Социальные сети
                 </h2>
-                <ul class="footer-social-list">
-                  <li class="footer-social-item">
+                <ul class="social-media-list">
+                  <li class="social-item">
                     <a class="button-social" href="#">
                       <span class="visually-hidden">Телеграм</span>
-                      <img class="social-item" src="#" width="24px" height="24px">
+                      <img class="social-logo" src="#" width="24px" height="24px">
                     </a>
                   </li>
-                  <li class="footer-social-item">
+                  <li class="social-item">
                     <a class="button-social" href="#">
                       <span class="visually-hidden">ВК</span>
-                      <img class="social-item" src="#" width="24px" height="24px">
+                      <img class="social-logo" src="#" width="24px" height="24px">
                     </a>
                   </li>
-                  <li class="footer-social-item">
+                  <li class="social-item">
                     <a class="button-social" href="#">
                       <span class="visually-hidden">Инстаграм</span>
-                      <img class="social-item" src="#" width="24px" height="24px">
+                      <img class="social-logo" src="#" width="24px" height="24px">
                     </a>
                   </li>
                 </ul>
@@ -206,26 +205,23 @@
                 Попробуйте самые популярные<br>
                 вкусы нашего мороженого
               </h2>
-              <ul class="tastes-container tastes-list">
+              <ul class="tastes-container taste-list">
                 <li class="tastes-card">
-                  <img class="tastes-image" src="images/berry.jpg" width="168" height="168" alt="Шарик с малиной">
-                    <div class="card-content">
-                      <h4 class="tastes-card-title">
-                        Малинка
-                      </h4>
-                      <p>
-                        Сливочное мороженое<br>
-                        с малиновым джемом
+                  <a class="product-card-image-link">
+                    <img class="product-card-image" src="images/berry.jpg" width="168" height="168" alt="Шарик с малиной">
+                  </a>
+                  <div class="card-content">
+                  <a class="product-card-title-link">
+                    <h4 class="taste-card-title">Малинка</h4>
+                      <span>
+                        Сливочное мороженое с малиновым джемом
+                      </span>
+                        <b>310 ₽/<span class="small-weight">кг</span></b>
                       </p>
-                      <div class="price-buy">
-                        <p>
-                          <b>310 ₽/<span class="small-weight">кг</span></b>
-                        </p>
                         <a class="button-red-small button-buy" href="#">
                           <span class="visually-hidden">В корзину</span>
                           <img class="cart-logo" src="#" width="12.75px" height="8.69px">
                         </a>
-                      </div>
                     </div>
                 </li>
                 <li class="tastes-card">
@@ -302,7 +298,7 @@
                 </h2>
                 <ul class="about-items about-list">
                     <li class="about-list-item">
-                      <div class="logo">
+                      <div class="about-logo">
                       </div>
                       <p>
                         Всё наше мороженое изготавливается на собственном<br>
@@ -311,7 +307,7 @@
                       </p>
                     </li>
                     <li class="about-list-item">
-                      <div class="logo">
+                      <div class="about-logo">
                       </div>
                       <p>
                         Закупка ингредиентов производится только<br>
@@ -320,7 +316,7 @@
                       </p>
                     </li>
                     <li class="about-list-item">
-                      <div class="logo">
+                      <div class="about-logo">
                       </div>
                       <p>
                         Для приготовления мороженого используются сливки<br>
@@ -329,7 +325,7 @@
                       </p>
                     </li>
                     <li class="about-list-item">
-                      <div class="logo">
+                      <div class="about-logo">
                       </div>
                       <p>
                         Доставка нашего мороженого осуществляется <br>
@@ -384,24 +380,34 @@
                   </p>
                 </div>
                   <div class="order-container order-card">
-                      <p>
+                      <p class="order-card-text">
                         Укажите адрес и дату доставки, и мы свяжемся<br>
                         с вами, чтобы подтвердить заказ.
                       </p>
-                      <form action="#" method="post">
-                        <p>
-                          <label for="delivery-date-box">Дата</label>
-                          <label for="phone-number-box">Телефон</label>
+                      <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+                        <p class="field-group order-card-date">
+                          <label for="delivery-date">
+                            Дата
+                            <button class="info">
+                              <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                            </button>
+                          <input type="date" name="delivery-date" id="delivery-date">
                         </p>
-                        <input type="date" name="delivery-date" id="delivery-date-box">
-                        <input type="number" name="phone-number" id="phone-number-box" placeholder="+7 800 999-00-00">
-                        <p>
-                          <label for="address-box">Адрес</label>
+                        <p class="field-group order-card-phone">
+                          <label for="phone-number">
+                            Телефон
+                          </label>
+                          <input type="number" name="phone-number" id="phone-number" placeholder="+7 800 999-00-00">
                         </p>
-                        <input type="text" name="address" id="address-box" placeholder="ул. Большая Конюшенная, 19/8">
-                        <p>
-                          <input class="button-red" type="submit" value="Отправить">
+                        <p class="field-group order-card-address">
+                          <label for="address">
+                            Адрес
+                            <button class="info">
+                              <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+                          </label>
+                          <input type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8">
                         </p>
+                        <button class="button-order-submit" type="submit">Отправить</button>
                       </form>
                     </div>
                  </div>
@@ -439,20 +445,23 @@
           <h2 class="visually-hidden">
             Социальные сети
           </h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
+          <ul class="social-media-list">
+            <li class="social-item">
               <a class="button-social" href="#">
                 <span class="visually-hidden">Телеграм</span>
+                <img class="social-logo" src="#" width="24px" height="24px">
               </a>
             </li>
-            <li class="footer-social-item">
+            <li class="social-item">
               <a class="button-social" href="#">
                 <span class="visually-hidden">ВК</span>
+                <img class="social-logo" src="#" width="24px" height="24px">
               </a>
             </li>
-            <li class="footer-social-item">
+            <li class="social-item">
               <a class="button-social" href="#">
                 <span class="visually-hidden">Инстаграм</span>
+                <img class="social-logo" src="#" width="24px" height="24px">
               </a>
             </li>
           </ul>
